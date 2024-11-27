@@ -17,9 +17,11 @@ export class InsertSymbolGenerator {
     generateHtml(): string {
         let html = "";
 
-        this.symbolConfig.forEach((symbol: SymbolModel) => {
-            html = html + this.generateCell(symbol);
-        });
+        // this.symbolConfig.forEach((symbol: SymbolModel) => {
+        //     html = html + this.generateCell(symbol);
+        // });
+        html = '<iframe src=\'/DAPopups/styleForm.html\' style=\'width:100%;height:100%;\'/></iframe>';
+
 
         return html;
     }

@@ -74,7 +74,7 @@ class InsertSymbolProvider implements EditorConfigProvider {
         const popupTemplateGenerator = function () {
             const symbolGenerator = new InsertSymbolGenerator(Object.keys(symbolList).map(k => symbolList[k]));
             const generatedHtml = symbolGenerator.generateHtml();
-            return `<div class='k-ct-popup symbol-popup'><div class='k-status symbol-title'>INSERT SPECIAL CHARACTERS</div>${generatedHtml}</div>`;
+            return `<div class='k-ct-popup symbol-popup'><div class='k-status symbol-title'>DA Wizards</div>${generatedHtml}</div>`;
         };
 
         const config: ToolConfig = {
